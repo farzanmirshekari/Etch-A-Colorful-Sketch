@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #ffffff;
+}
+
+.clear-fade {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.5s ease;
+}
+
+.clear-fade-2 {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.4s ease; 
+}
+
+.clear-fade-3 {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.3s ease; 
+}
+
+.clear-fade-4 {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.2s ease; 
+}
+
+.clear-fade-5 {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.1s ease; 
+}
+
+.clear-fade-6 {
+    background-color: var(--bg-color) !important;
+    transition: background-color 1.0s ease; 
+}
+
+body {
+    background: linear-gradient(90deg, rgb(172, 71, 71), rgb(233, 233, 97));
+}
+
+.header {
+    margin-top: 50px;
+    color: rgb(27, 73, 112);
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    background-color: #89b1df;
+    border-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    border: 1.5px solid rgb(156,156,156);
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type="color"] {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: rgba(0,0,0);
+    border-radius: 2px;
+    width: 200%;
+    height: 200%;
+    transform: translate(-10px, -10px);
+}
+
+.color-box {
+    height: 36px;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1.5px solid rgb(0, 0, 0);
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.color-card {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: relative;
+}
+
+.color-card span {
+    margin-left: 10px;
+    position: absolute;
+    top: 10px;
+    left: 88px;
+}
+
+button {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(207, 57, 57, 0);
+    font-size: 18px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 9px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cc2 {
+    margin-bottom: 25px;
+}
+
+#color-grabber {
+    margin-bottom: 25px;
+}
+
+#lighten-button {
+    margin-bottom: 31px;
+}
+
+.slider-box {
+    margin-bottom: 10px;
+}
+
+.grid-size {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#grid-button {
+    margin-bottom: 30px;
+}
+
+#clear-grid {
+    margin-bottom: 0px;
+}
+
+.button-on {
+    background-color: rgb(142, 197, 71);
+    color: #202020;
+}
+
+.grid-item {
+    user-select: none;
+}
+
+.border-top-left {
+    border-top: 1px solid rgb(156,156,156);
+    border-left: 1px solid rgb(156,156,156);
+}
+
+.border-right {
+    border-right: 1px solid rgb(156,156,156);
+}
+
+.slider-box {
+    position: relative;
+    width: 100%;
+}
+
+#range-value {
+    text-align: center;
+}
+
+.main {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.controls {
+    width: 300px;
+    background-color: #e2d199;
+    border-radius: 20px;
+    padding: 30px;
+    transform: translate(0%, -1.8%);
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 2px;
+    background: #404040;
+    appearance: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+#progress-bar {
+    width: 40%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 2px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+#save-button {
+    margin-top: 12px;
+}

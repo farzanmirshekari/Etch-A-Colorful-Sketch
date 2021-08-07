@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-A-Colorful-Sketch</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <script src="html2canvas.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <p>Etch-A-Colorful-Sketch</p>
+            </div>
+            <div class="main">
+                <div class="controls">
+                    <div class="color-card">
+                        <div class="color-box">
+                            <input type="color" id="color-select">
+                        </div>
+                        <span>Pencil Colour</span>
+                    </div>
+                    <div class="color-card cc2">
+                        <div class="color-box">
+                            <input type="color" id="background-color-select" value="#ffffff">
+                        </div>
+                        <span>Background Colour</span>
+                    </div>
+                    <button id="color-fill">Colour Fill</button>
+                    <button id="color-grabber">Colour Grabber</button>
+                    
+                    <button id="eraser-button">Toggle Eraser</button>
+                    <button id="rainbow-button">Toggle Rainbow</button>
+                    <button id="shader-button">Toggle Shader</button>
+                    <button id="lighten-button">Toggle Lightener</button>
+
+                    <div class="slider-box">
+                        <input type="range" value="24" min="1" max="128" id="range-slider"
+                         onmousemove="rangeSliderValue(this.value)" onChange="rangeSlider(this.value)">
+                        <div id="progress-bar"></div>
+                    </div>
+
+                    <p class="grid-size">Grid Size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
+
+                    <button id="grid-button" class="button-on">Show/Hide Grid Lines</button>
+                    <button id="clear-grid">Clear</button>
+                    <button id="save-button">Save Drawing</button>
+
+                </div>
+                <div id="painting-area" class="grid-wrapper">
+                    <div id="painting-container" class="grid-container toggle-grid" draggable="false"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -282,8 +282,8 @@ function clearGrid() {
   }, 1500);
   container.style.backgroundColor = backgroundColor;
   setTimeout(function () {
-    clearButton.classList.remove('btn-on');
-  }, 500);
+    clearButton.classList.remove('button-on');
+  }, 1000);
 }
 
 clearButton.addEventListener('click', clearGrid);
